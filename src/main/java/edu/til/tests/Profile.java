@@ -2,9 +2,13 @@ package edu.til.tests;
 
 public class Profile {
 
+    private Answer answer;
+
     public boolean matches(Criterion criterion) {
+        return answer != null;
+    }
 
-
-        return false;
+    public void add(Answer answer) {
+        this.answer = answer;
     }
 }
