@@ -14,6 +14,7 @@ public class ProfileTests {
         Question question = new BooleanQuestion(1, "Relocation Package?");
         Criterion criterion = new Criterion(new Answer(question, Boolean.TRUE), Weight.DontCare);
 
+
         boolean result = profile.matches(criterion);
 
         assertFalse(result);
